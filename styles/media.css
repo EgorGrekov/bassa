@@ -1,0 +1,14 @@
+@media screen and (max-width: 520px) {
+   .form-container {
+    align-items: inherit;
+    margin: 0 auto;
+   }
+   .form__form{
+    margin: 0px 15px;
+   }
+}
+@media screen and (max-width: 475px) {
+  .form__form {
+    max-width: 300px;
+  }
+}

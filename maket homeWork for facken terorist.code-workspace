@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "../МАКЕТИ ТА РОЗРОБКИ/maket homeWork for facken terorist"
+		},
+		{
+			"path": "../МАКЕТИ ТА РОЗРОБКИ/макет з анімаціями сторінки"
+		},
+		{
+			"path": "../МАКЕТИ ТА РОЗРОБКИ/макет мульт"
+		},
+		{
+			"path": "../МАКЕТИ ТА РОЗРОБКИ/relvise"
+		},
+		{
+			"path": "../practic/practic_animation"
+		},
+		{
+			"path": "../практичні завдання для роботи/форми від фрілансера по життю"
+		},
+		{
+			"path": "../practic/просто для практики"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "maket homeWork for facken terorist"
+	}
+}
