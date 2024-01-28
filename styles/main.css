@@ -5,13 +5,14 @@ body {
     padding: 0;
     background: #000;
     color: white;
-    font-family: 'Tektur', sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
 }
 .container {
     padding: 10px 20px;
     margin: 0 auto;
+    width: 90%;
    
 }
 .body-container{
@@ -25,9 +26,8 @@ body {
     background-position: center;
     background-attachment: fixed;
     color: white;
-    font-family: 'Tektur', sans-serif;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     align-items: baseline; 
 }
 .container__active-bg {
@@ -44,8 +44,12 @@ body {
     display: flex;
     align-items: center;
 }
+.main__container {
+    position: relative;
+    top: 1.4rem;
+}
 .form-container {
-    margin-top: 15%;
+    margin-top: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,6 +58,7 @@ body {
 .form__form {
     width: 400px;
     padding: 10px;
+    margin-top: -5rem;
     justify-content: center;
     flex-direction: column;
     background: #fff;
@@ -63,16 +68,17 @@ body {
     transition: 0.3s ease-in-out;
 }
 .form__form_active {
-    display: flex;
+    display: flex;  
 }
 
 .form__input {
     margin-bottom: 10px;
-    padding: 7px;
+    padding: 11px;
     border: solid 1px #000;
     border-radius: 7px;
     color: #000;
     letter-spacing: 1px;
+    font-size: inherit;
 }
 .form__selects{
     margin-bottom: 10px;
@@ -193,7 +199,9 @@ body {
 .btn__entrance:active {
     transform: scale(1);
 }
+/* main styles end */
 
+/* footer styles sart */
 .footer {
     display: block;
     position: fixed;
@@ -230,3 +238,243 @@ body {
 .social__link:hover {
     color: #ffd700;
 }
+/* footer styles end */
+
+/* header styles start */
+.inter__container {
+    height: 100vh;
+    font: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+    font-family: inherit;
+}
+.header {
+   box-shadow: -30px 0px  20px 27px rgba(0, 0, 0, 0.5);
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background: #000;
+   z-index: 1;
+}
+.global__container {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__container {
+    padding: 12px 0px;
+}
+
+.logo__container {
+    width: 2rem;
+    height: 3rem;
+    background: white;
+}
+.logo__img {
+    height: 100%;
+}
+.user__container {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+.btn__user {
+    display: contents;
+    color: inherit;
+    cursor: pointer;
+}
+.btn__user:hover {
+  color: #ffd700;
+  transition: .5s;
+}
+.user__icon {
+    font-size: 32px;
+}
+.user__name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: .8rem;
+    letter-spacing: 1px;
+}
+.buttons__container {
+    align-items: flex-start;
+}
+.btn__inter {
+    width: 100%;
+    /* padding: 11px; */
+    height: 2.8rem;
+    background: #000;
+    color: inherit;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+.btn__inter:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.btn__inter:last-child{
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
+} 
+.btn__inter:focus {
+    border-bottom: none;
+    color: #ffd700;
+}
+.btn__inter:first-child:focus {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0;
+}
+.btn__inter:last-child:focus {
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 0;
+}
+/* header styles end */
+
+/* section styles start */
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+
+    /* ось цей фільтр */
+    /* filter: blur(10px);  */
+    /* тут */
+}
+.section__title {
+    width: 30%;
+    padding: 15px;
+    margin-top: 3rem;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+
+    box-shadow: 0 0 10px rgba(251, 249, 249, 0.5);
+    /* box-shadow: 0 0 15px 10px rgba(212, 14, 14, 0.5); */
+
+    filter: blur(20px); 
+}
+.section__table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.table__value, 
+.table__indicator {
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.table__value {
+    padding-right: 10px;
+    border-right: 1px solid #000;
+}
+.table__indicator {
+    width: 100%;
+    padding-left: 10px;
+    border-right:  none;
+    border-top: none;
+}
+.section__btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+.section__btn {
+    display: flex;
+    background: #000;
+    color: #fff;
+    padding: 10px 15px;
+    box-shadow: 0px 0px 5px rgba(71, 70, 70, 0.8);
+    border-radius: 5px;
+    font-size: 15px;
+    transition: .7s;
+}
+.section__btn > p {
+    margin-left: 7px;
+    font-size: inherit;
+    font-weight: bold;
+}
+.section__btn:hover {
+    color: #ffd700;
+   
+}
+.section__btn:active {
+    box-shadow: inset 0px 0px 0px 2px rgba(250, 250, 250, 1);
+}
+/* section styles end */
+
+
+
+/* aplication styles start */
+.conteiner__aplication {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    position: absolute;
+    top: 0rem;
+    z-index: 2;
+}
+
+.block__aplication {
+    width: 750px;
+    max-height: 600px;
+    overflow-y: scroll;
+    padding: 10px;
+    top: 48px;
+    position: relative;
+    margin: 0 auto;
+    background: #fff;
+    color: #000;
+    border-radius: 9px;
+    box-shadow: 0px 0px 15px 8px rgba(10, 10, 10, 0.5);
+}
+
+.table__aplication {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.aplication__title {
+    display: inline-flex;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #000;
+}
+.table__aplication-title {
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 10px;
+    word-wrap: break-word;
+    max-width: 400px;
+}
+
+.table__aplication-title:last-of-type {
+    border-right: none;
+}
+.center-aplication {
+    white-space: nowrap;
+    text-align: center;
+}
+
+.body__aplication:last-child tr:last-child .table__aplication-title {
+    border-bottom: none;
+}
+.body__aplication tr:nth-child(odd) {
+    /* background: #e9e9e9; */
+
+    background: #d9c0c0;
+}
+/* aplication styles end */
+
+/* burger button styles start */
+
+
+
