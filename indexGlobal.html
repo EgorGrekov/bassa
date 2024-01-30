@@ -10,8 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="inter__container ">
-        <header class="header ">
+    <div class="inter__container"> <!-- /щось 12хв тут / -->
+        <aside id="burgerMenu" class="burger__menu"> <!--/*menu*/ --><!--/id=menu/ -->
+            <button class="burger__menu-entrance">
+               <span></span>
+               <span></span>
+            </button>
+            <menu class="burger__buttons"> <!--/*menu list*/ -->
+                <button class="burger__button"><p class="bi-person-circle"></p> Користувач</button> <!--/*menu* item/ --> <!--/*menu link ссилка всередині*/ -->
+                <button class="burger__button"><p class="bi-gear-fill"></p> Налаштування</button>
+                <button class="burger__button"><p class="bi-box-arrow-left"></p> Вихід</button>
+            </menu>
+        </aside>
+        <header class="header"> 
             <div class="global__container header__container">
                 <div class="logo__container">
                     <a href="#">
@@ -19,9 +30,9 @@
                     </a>
                 </div>
                 <div class="user__container">
-                    <button class="btn__user">
+                    <button id="burgerOpen" class="btn__user"> <!--/id=burger/ -->
                         <p class="user__name">Дмитро Усов</p>
-                        <p class="user__icon bi bi-person-circle"></p>
+                        <p class="user__icon bi-person-circle"></p>
                     </button>
                 </div>
             </div>
@@ -31,92 +42,9 @@
                 <button class="btn__inter">НЕДОСТУПНО</button>
                 <button class="btn__inter">ВИКОНАНО</button>
             </div>
-            <aside class="burger__menu">
-                <!-- <menu>
-                    <button class="btn__burger">Користувач<p></p></button>
-                    <button class="btn__burger">Налаштування</button>
-                    <button class="btn__burger">Вихід</button>
-                </menu> -->
-            </aside>
         </header>
         <main class="main__container">
-            <div class="conteiner__aplication global__container">
-                <section class="block__aplication">
-                    <table class="table__aplication">
-                        <thead>
-                            <h1 class="aplication__title">Заявка №<p class="aplication__number">1</p></h1>
-                            <tr>
-                                <th class="table__aplication-title">Номенклатура</th>
-                                <th class="table__aplication-title center-aplication">К-ть</th>
-                                <th class="table__aplication-title">Коментар</th>
-                            </tr>
-                        </thead>
-                        <tbody class="body__aplication">
-                            <!-- <th>Заявка №<p class="aplication__number">1</p></th> -->
-                            <tr>
-                                <td class="table__aplication-title table__aplication-subtitle"></td>
-                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
-                                <td class="table__aplication-title"></td>
-                            </tr>
-                            <tr>
-                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
-                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
-                                <td class="table__aplication-title">Тес Loit. Ratione?т</td>
-                            </tr>
-                            <tr>
-                                <td class="table__aplication-title table__aplication-subtitle">Lorem ipsum dolor sit amet consectetur.</td>
-                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
-                                <td class="table__aplication-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
-                            </tr>
-                            <tr>
-                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
-                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
-                                <td class="table__aplication-title">Тес Lorem i elit. Ratione?т</td>
-                            </tr>
-                            <tr>
-                                <td class="table__aplication-title table__aplication-subtitle"></td>
-                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
-                                <td class="table__aplication-title"></td>
-                            </tr>
-                            <tr>
-                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
-                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
-                                <td class="table__aplication-title">Те</td>
-                            </tr>
-                            <tr>
-                                <td class="table__aplication-title table__aplication-subtitle"></td>
-                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
-                                <td class="table__aplication-title"></td>
-                            </tr>
-                            <tr>
-                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
-                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
-                                <td class="table__aplication-title">Тес Lt. Ratione?т</td>
-                            </tr>
-                            <tr>
-                                <td class="table__aplication-title table__aplication-subtitle"></td>
-                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
-                                <td class="table__aplication-title"></td>
-                            </tr>
-                            <tr>
-                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
-                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
-                                <td class="table__aplication-title">Тес Loremlit. Ratione?т</td>
-                            </tr>
-                            <tr>
-                                <td class="table__aplication-title table__aplication-subtitle"></td>
-                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
-                                <td class="table__aplication-title"></td>
-                            </tr>
-                            <tr>
-                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
-                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
-                                <td class="table__aplication-title">Тес Lorem ipg elit. Ratione?т</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-            </div>
+         
             <div class="sections global__container">
                 <section class="section__title">
                     <table class="section__table">
@@ -155,8 +83,8 @@
                     </table>
                     <div class="section__btns">
                         <button class="section__btn" type="submit">Виконати<p class="bi-check-circle-fill"></p></button>
-                        <button class="section__btn" type="reset">Відмінити<p class="bi-x-circle-fill"></p></button>
-                        <button class="section__btn">Заявки<p class="bi bi-file-text"></p></button>
+                        <button class="section__btn open__list" type="reset">Відмінити<p class="bi-x-circle-fill"></p></button>
+                        <button class="section__btn open__aplication">Заявки<p class="bi bi-file-text"></p></button>
                     </div>
                 </section>
 
@@ -368,7 +296,133 @@
                 </section>
                 
             </div>
+            <div class="conteiner__aplication global__container">
+                <section class="block__aplication">
+                    <table class="table__aplication">
+                        <thead class="head__aplication">
+                            <tr>
+                                <th class="table__aplication-title">Номенклатура</th>
+                                <th class="table__aplication-title center-aplication">К-ть</th>
+                                <th class="table__aplication-title">Коментар</th>
+                            </tr>
+                        </thead>
+                        <tbody class="body__aplication">
+                            <td class="aplication__title" colspan="3">Заявка № <p class="aplication__number">1</p>
+                            </td>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle"></td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title"></td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title">Тес Loit. Ratione?т</td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title">Тес Loit. Ratione?т</td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title">Тес Loit. Ratione?т</td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle">Тест Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, unde.</td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title">Тес Loit. Ratione?т</td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title">Тес Loit. Ratione?т</td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title">Тес Loit. Ratione?т</td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title">Тес Loit. Ratione?т</td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle">Lorem ipsum dolor sit amet consectetur.</td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title">Тес Lorem i elit. Ratione?т</td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle"></td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title"></td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title">Те</td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle"></td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title"></td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title">Тес Lt. Ratione?т</td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle"></td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title"></td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title">Тес Loremlit. Ratione?т</td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle"></td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title"></td>
+                            </tr>
+                            <tr>
+                                <td class="table__aplication-title table__aplication-subtitle">Тест</td>
+                                <td class="table__aplication-title table__aplication-subtitle center-aplication">3</td>
+                                <td class="table__aplication-title">Тес Lorem ipg elit. Ratione?т</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            <div class="container__list global__container">
+                <section class="block__list">
+                    <h2 class="list__title">НЕВИКОНАНІ ЕТАПИ:</h2>
+                    <ul class="list__wrapper">
+                        <li class="list__wrap">Lorem, ipsum dolor.</li>
+                        <li class="list__wrap">Lorem ipsum dolor sit.
+                            <ul class="list__items">
+                                <li class="list__item">Lorem ipsum dolor sit amet.</li>
+                                <li class="list__item">Lorem ipsum dolor sit amet consectetur.</li>
+                                <li class="list__item">Lorem, ipsum dolor.</li>
+                            </ul>
+                        </li>
+                        <li class="list__wrap">Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+                        <li class="list__wrap">Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque possimus quos quo ea magni nemo nesciunt sequi laboriosam earum ab. ipsum dolor sit amet.</li>
+                        <li class="list__wrap">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora.</li>
+                    </ul>
+                </section>
+            </div>
         </main>
     </div>
+    <script src="./js/appMain.js"></script>
 </body>
 </html>
